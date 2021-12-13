@@ -5,12 +5,15 @@ namespace Lab1
 {
     public class A
     {
-        private float a=2.3f;
-        private float b=4.5f;
+        private float a = 2.3f;
+        private float b = 4.5f;
 
         public float c
         {
-            get { return (++a / b); }
+            get {
+                a *= a;
+                return (++a / b); 
+            }
         }
     }
     public class Program
